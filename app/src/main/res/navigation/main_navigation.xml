@@ -40,5 +40,17 @@
         <action
             android:id="@+id/shoeList_to_login"
             app:destination="@id/login_destination" />
+        <action
+            android:id="@+id/shoeList_to_shoeInfo"
+            app:destination="@id/shoeInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeInfoFragment"
+        android:name="com.udacity.shoestore.screens.ShoeInfoFragment"
+        android:label="fragment_shoe_info"
+        tools:layout="@layout/fragment_shoe_info" >
+        <action
+            android:id="@+id/cancel_to_shoeList"
+            app:destination="@id/shoeListFragment" />
     </fragment>
 </navigation>

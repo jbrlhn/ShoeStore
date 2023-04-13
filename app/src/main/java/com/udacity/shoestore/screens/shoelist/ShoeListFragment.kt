@@ -23,7 +23,7 @@ class ShoeListFragment : Fragment() {
             DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
         (activity as AppCompatActivity).supportActionBar?.title = "Shoe List"
         setHasOptionsMenu(true)
-        //binding.addShoeButton.setOnClickListener { findNavController().navigate(ShoeListFragmentDirections.shoeListToShoeDetail()) }
+        binding.addShoeButton.setOnClickListener { findNavController().navigate(ShoeListFragmentDirections.shoeListToShoeInfo()) }
 
 
         return binding.root
